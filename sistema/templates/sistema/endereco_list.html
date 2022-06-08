@@ -1,0 +1,37 @@
+{% extends "sistema/base.html" %}
+
+{% block content %}
+<div>
+    <table>
+        <tr>
+            <th>Cep</th>
+            <th>Endereço</th>
+            <th>Número</th>
+            <th>complemento</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>UF</th>
+            <th>Descrição</th>
+        </tr>
+        {% for endereco in endereco_list %}
+            <tr>
+                <td>{{endereco.cep}}</td>
+                <td>{{endereco.endereco}}</td>
+                <td>{{endereco.numero}}</td>
+                <td>{{endereco.complemento}}</td>
+                <td>{{endereco.bairro}}</td>
+                <td>{{endereco.cidade}}</td>
+                <td>{{endereco.uf}}</td>
+                <td>{{endereco.descricao | truncatewords:10}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+    <form action="/cadastrar" class="form_list">
+        <input type="submit" value="Cadastrar" />
+    </form>
+</div>
+
+    
+{% endblock %}

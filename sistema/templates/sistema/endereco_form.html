@@ -1,0 +1,13 @@
+{% extends 'sistema/base.html' %}
+{%block content %}
+<div class="formulario">
+    <form action="/cadastrar/" method="post" Id="formId">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>salvar</button>
+    </form>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,100 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+main ,header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+#formId{
+    display: block;
+    text-align: left;
+}
+
+form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.formulario{
+    background-color: #ffdeb8;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px black;
+}
+
+#formId input{
+    width: 100%;
+    height:20px;
+    border-radius: 10px;
+    border: solid 1px black;
+    padding-left: 7px;
+}
+
+.formulario button{
+    height: 30px;
+    width: 100px;
+    background-color: #8444B2;
+    border: solid 1px black;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    transition: all linear .2s;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 1px black;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.form_list input{
+    width: 200px;
+    height: 30px;
+    background-color: #8444B2;
+    border: solid 1px black;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    transition: all linear .2s;
+}
+
+.form_list input:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 1px black;
+    color: rgb(0, 0, 0);
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even){ /*seleciona elementos com base em suas posições em um grupo de elementos irmãos. Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc. */
+    background-color: #ffd3a4;
+}
+
+tr:nth-child(odd){ 
+    background-color: #faebda;
+}
